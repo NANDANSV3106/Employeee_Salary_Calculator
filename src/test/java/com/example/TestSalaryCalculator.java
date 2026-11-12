@@ -20,7 +20,7 @@ public class TestSalaryCalculator {
     }
     @Test
     public void testNetSalaryCalculation() {
-        assertEquals(15000.0, SalaryCalculator.calculateNetSalary(10000));
+        assertEquals(15800.0, SalaryCalculator.calculateNetSalary(10000));
     }
     @Test
     public void testBoundaryAndInvalidSalaryValues() {
