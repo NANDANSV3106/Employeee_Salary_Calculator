@@ -33,10 +33,4 @@ public class TestSalaryCalculator {
         assertEquals("Invalid salary", SalaryCalculator.calculateNetSalary(0));
         assertEquals("Invalid salary", SalaryCalculator.calculateNetSalary(-5000));
     }
-      @Test
-    public void testIntentionalFailure() {
-        SalaryCalculator calc = new SalaryCalculator();
-        double result = calc.calculateSalary(50000);
-        assertEquals(99999, result); 
-    }
 }
