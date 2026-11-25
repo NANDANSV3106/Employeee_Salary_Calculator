@@ -8,5 +8,5 @@ RUN mvn clean package -DskipTests
 # Stage 2: Run the JAR using a lightweight JRE 17 image
 FROM eclipse-temurin:17-jre-alpine
 WORKDIR /app
-COPY --from=build /app/target/Calculator-1.0-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/Employee_Salary_Calculator-1.0-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
